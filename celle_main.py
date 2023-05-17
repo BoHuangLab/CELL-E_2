@@ -179,7 +179,7 @@ class CELLE_trainer(pl.LightningModule):
         if monitor is not None:
             self.monitor = monitor
 
-        ignore_keys = []
+        ignore_keys = ["text_emb"]
 
         if condition_model_path:
             ignore_keys.append("celle.condition_vae")
