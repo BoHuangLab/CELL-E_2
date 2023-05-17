@@ -261,7 +261,10 @@ class ModelExtender(nn.Module):
 
         # Set the number of output features and initialize the scaling layer
         self.out_features = out_features
-        self.scale_layer = nn.Linear(self.in_features, self.out_features)
+        if self.in_features != self.out_features:
+            self.scale_layer = nn.Linear(self.in_features, self.out_features)
+        else:
+            self.scale_layer = nn.Identity()
 
         # Determine whether to freeze the model's parameters
         self.fixed_embedding = fixed_embedding
