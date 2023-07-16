@@ -7,6 +7,7 @@
 # CELL-E 2: Translating Proteins to Pictures and Back with a Bidirectional Text-to-Image Transformer
 
 This repository is the official implementation of [CELL-E 2: Translating Proteins to Pictures and Back with a Bidirectional Text-to-Image Transformer](). 
+[Project Page](http://huanglab.ucsf.edu/celle-2/)
 
 ![architecture](images/architecture.png)
 
