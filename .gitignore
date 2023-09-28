@@ -10,7 +10,7 @@
 
 # next.js
 /.next/
-/out/
+# /out/ # https://github.com/vercel/next.js/tree/canary/examples/github-pages
 
 # production
 /build
