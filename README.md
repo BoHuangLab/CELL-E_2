@@ -36,7 +36,7 @@ We also have two spaces available where you can run predictions on your own data
 To generate images, set the saved model as the ckpt_path. This method can be unstable, so refer to ```Demo.ipynb``` to see another way of loading.
 
 ```python
-import OmegaConf
+from omegaconf import OmegaConf
 from celle_main import instantiate_from_config
 
 configs = OmegaConf.load(configs/celle.yaml);
@@ -121,6 +121,12 @@ CELL-E contains the following options:
 
 Please cite us if you decide to use our code for any part of your research.
 ```
-CELL-E 2: Translating Proteins to Pictures and Back with a Bidirectional Text-to-Image Transformer
-Emaad Khwaja, Yun S. Song, [Aaron Agaurnov](https://github.com/agarun), Bo Huang
+@inproceedings{
+anonymous2023translating,
+title={CELL-E 2: Translating Proteins to Pictures and Back with a Bidirectional Text-to-Image Transformer},
+author={Emaad Khwaja, Yun S. Song, Aaron Agarunov, and Bo Huang},
+booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+year={2023},
+url={https://openreview.net/forum?id=YSMLVffl5u}
+}
 ```
