@@ -1,29 +1,34 @@
 import { useState } from 'react';
+import IframeResizer from 'iframe-resizer-react';
 
 type DemoProps = {
   id: string;
   src: string;
-  height: string;
+  height?: string;
+  className?: string;
 };
 
-function Demo({ id, src, height }: DemoProps) {
+function Demo({ id, src, height, className = '' }: DemoProps) {
   const [showDemo, setShowDemo] = useState(false);
 
   return (
-    <div className="flex justify-center mt-12 mb-16 px-2 xl:px-32">
+    <div className="flex justify-center mt-12 mb-16 px-2 xl:px-8 2xl:px-32">
       {showDemo ? (
-        <iframe
+        <IframeResizer
           id={id}
-          className="rounded-lg w-full xl:w-4/5"
+          className={`rounded-lg w-full xl:w-4/5 ${className}`}
           src={src}
           frameBorder="0"
-          scrolling="no"
-          height={height}
-        ></iframe>
+          scrolling={false} // == `scrolling="no"`
+          style={{
+            minWidth: '100%',
+            minHeight: 1000
+          }}
+        />
       ) : (
         <button
           style={{
-            height: `${Number(height) / 3}px`
+            height: height ? `${Number(height) / 3}px` : 400
           }}
           className={`
             flex justify-center items-center

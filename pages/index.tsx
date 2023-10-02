@@ -137,7 +137,6 @@ function Main() {
         <Demo
           id="demo1"
           src="https://huanglab-cell-e-2-image-prediction.hf.space/?__theme=light"
-          height="1200"
         />
 
         <section
@@ -166,7 +165,6 @@ function Main() {
         <Demo
           id="demo2"
           src="https://huanglab-cell-e-2-sequence-prediction.hf.space/?__theme=light"
-          height="1230"
         />
 
         <section
