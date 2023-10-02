@@ -13,7 +13,11 @@ function HeaderCanvas() {
   const radius = 50;
 
   return (
-    <Canvas camera={{ position: [0, 0, 5], fov: 90 }}>
+    <Canvas
+      style={{ background: '#18181b' }}
+      camera={{ position: [0, 0, 5], fov: 90 }}
+      gl={{ alpha: true }}
+    >
       <color attach="background" args={['#18181b']} />
       <Lines
         dash={dash}

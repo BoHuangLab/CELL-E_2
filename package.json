@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "deploy-next": "next build && touch out/.nojekyll && git add out/ && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages",
-    "deploy": "next build && touch out/.nojekyll && mv out docs && git add docs/ && git commit -m \"Deploy\" && git push"
+    "deploy-no-commit": "next build && touch out/.nojekyll && mv out docs && git add docs/",
+    "deploy": "next build && touch out/.nojekyll && mv out docs && git add docs/ && git commit -m \"Deploy\" && git checkout gh-pages && git push"
   },
   "dependencies": {
     "@react-three/drei": "^9.68.2",

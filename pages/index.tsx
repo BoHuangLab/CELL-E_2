@@ -1,6 +1,7 @@
 import Image from 'next/image';
+import Script from 'next/script';
+import Head from 'next/head';
 import { Inter } from 'next/font/google';
-import { useState } from 'react';
 import Header from '../components/Header';
 import Nav from '../components/Nav';
 import Abstract from '../components/Abstract';
@@ -195,6 +196,47 @@ function Main() {
   );
 }
 
+function MetaTag() {
+  return (
+    <Head>
+      <title>CELL-E 2</title>
+      <meta
+        name="description"
+        content="CELL-E 2 is a bidirectional transformer that generates realistic images and sequences of protein localization in the cell."
+        key="desc"
+      />
+      <meta property="og:title" content="CELL-E 2" />
+      <meta
+        property="og:description"
+        content="CELL-E 2 is a bidirectional transformer that generates realistic images and sequences of protein localization in the cell."
+      />
+      <meta
+        property="og:image"
+        content="https://bohuanglab.github.io/CELL-E_2/architecture.png"
+      />
+      <meta property="og:image:alt" content="architecture figure" />
+      <meta name="twitter:card" content="summary_large_image" />
+    </Head>
+  );
+}
+
+function GTag() {
+  return (
+    <>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+      </Script>
+    </>
+  );
+}
+
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
@@ -215,6 +257,8 @@ export default function Home() {
       <Main />
 
       <Footer />
+
+      <GTag />
     </div>
   );
 }
