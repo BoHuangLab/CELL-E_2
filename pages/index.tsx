@@ -136,7 +136,7 @@ function Main() {
 
         <Demo
           id="demo1"
-          src="https://huanglab-cell-e-2-image-prediction.hf.space/"
+          src="https://huanglab-cell-e-2-image-prediction.hf.space/?__theme=light"
           height="1200"
         />
 
@@ -165,7 +165,7 @@ function Main() {
 
         <Demo
           id="demo2"
-          src="https://huanglab-cell-e-2-sequence-prediction.hf.space/"
+          src="https://huanglab-cell-e-2-sequence-prediction.hf.space/?__theme=light"
           height="1230"
         />
 
@@ -223,14 +223,14 @@ function MetaTag() {
 function GTag() {
   return (
     <>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID" />
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-321VEL09L6" />
       <Script id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
  
-          gtag('config', 'GA_MEASUREMENT_ID');
+          gtag('config', 'G-321VEL09L6');
         `}
       </Script>
     </>
