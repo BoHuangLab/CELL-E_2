@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>CELL-E 2</title><meta name="description" content="CELL-E 2 is a bidirectional transformer that generates realistic images and sequences of protein localization in the cell."/><meta property="og:title" content="CELL-E 2"/><meta property="og:description" content="CELL-E 2 is a bidirectional transformer that generates realistic images and sequences of protein localization in the cell."/><meta property="og:image" content="https://bohuanglab.github.io/CELL-E_2/architecture.png"/><meta property="og:image:alt" content="architecture figure"/><meta name="twitter:card" content="summary_large_image"/><link rel="preload" as="image" href="/CELL-E_2/architecture.png" fetchpriority="high"/><meta name="next-head-count" content="10"/><link rel="preload" href="/CELL-E_2/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/CELL-E_2/_next/static/css/7c1e5543c0f7d674.css" as="style"/><link rel="stylesheet" href="/CELL-E_2/_next/static/css/7c1e5543c0f7d674.css" data-n-g=""/><link rel="preload" href="/CELL-E_2/_next/static/css/f0349ea95bbb4d5d.css" as="style"/><link rel="stylesheet" href="/CELL-E_2/_next/static/css/f0349ea95bbb4d5d.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/CELL-E_2/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/CELL-E_2/_next/static/chunks/webpack-a64f6cade202c79a.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/main-707cbce1bf604565.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/pages/_app-d9850b15717b8996.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/a560505e-9cd7e110f7aa0f86.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/084bacf3-c4940f4e8dafd39e.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/897-7da8b63e78079ab3.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/pages/index-eb7cf0c27d837a50.js" defer=""></script><script src="/CELL-E_2/_next/static/Hub8ULo92les8YjFuCXK5/_buildManifest.js" defer=""></script><script src="/CELL-E_2/_next/static/Hub8ULo92les8YjFuCXK5/_ssgManifest.js" defer=""></script><style id="__jsx-306e8cfe68c568dc">.gradient.jsx-306e8cfe68c568dc{background:-webkit-linear-gradient(120deg,#b100ff 20%,#ff0080 40%,#b100ff 60%,#ff0080 80%);background:-moz-linear-gradient(120deg,#b100ff 20%,#ff0080 40%,#b100ff 60%,#ff0080 80%);background:-o-linear-gradient(120deg,#b100ff 20%,#ff0080 40%,#b100ff 60%,#ff0080 80%);background:linear-gradient(330deg,#b100ff 20%,#ff0080 40%,#b100ff 60%,#ff0080 80%);-webkit-background-size:100%auto;-moz-background-size:100%auto;-o-background-size:100%auto;background-size:100%auto;color:#000;background-clip:text;text-fill-color:transparent;-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0px 0px 20px#ff008040;-webkit-animation:shine 15s infinite;-moz-animation:shine 15s infinite;-o-animation:shine 15s infinite;animation:shine 15s infinite}</style></head><body><div id="__next"><div class="relative __className_f1fba7"><header class="jsx-306e8cfe68c568dc 
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width"/><title>CELL-E 2</title><meta name="description" content="CELL-E 2 is a bidirectional transformer that generates realistic images and sequences of protein localization in the cell."/><meta property="og:title" content="CELL-E 2"/><meta property="og:description" content="CELL-E 2 is a bidirectional transformer that generates realistic images and sequences of protein localization in the cell."/><meta property="og:image" content="https://bohuanglab.github.io/CELL-E_2/architecture.png"/><meta property="og:image:alt" content="architecture figure"/><meta name="twitter:card" content="summary_large_image"/><link rel="preload" as="image" href="/CELL-E_2/architecture.png" fetchpriority="high"/><meta name="next-head-count" content="10"/><link rel="preload" href="/CELL-E_2/_next/static/media/c9a5bc6a7c948fb0-s.p.woff2" as="font" type="font/woff2" crossorigin="anonymous" data-next-font="size-adjust"/><link rel="preload" href="/CELL-E_2/_next/static/css/fa2e377006d2a95d.css" as="style"/><link rel="stylesheet" href="/CELL-E_2/_next/static/css/fa2e377006d2a95d.css" data-n-g=""/><link rel="preload" href="/CELL-E_2/_next/static/css/f0349ea95bbb4d5d.css" as="style"/><link rel="stylesheet" href="/CELL-E_2/_next/static/css/f0349ea95bbb4d5d.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/CELL-E_2/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/CELL-E_2/_next/static/chunks/webpack-9a65efc1329ec957.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/main-6cecd765a9880904.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/pages/_app-97656fb91f718cfb.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/a560505e-9cd7e110f7aa0f86.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/084bacf3-c4940f4e8dafd39e.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/897-890df912d1c095c3.js" defer=""></script><script src="/CELL-E_2/_next/static/chunks/pages/index-a54f15376c51e449.js" defer=""></script><script src="/CELL-E_2/_next/static/iQd5ZjY8RwTea-tNlNief/_buildManifest.js" defer=""></script><script src="/CELL-E_2/_next/static/iQd5ZjY8RwTea-tNlNief/_ssgManifest.js" defer=""></script><style id="__jsx-306e8cfe68c568dc">.gradient.jsx-306e8cfe68c568dc{background:-webkit-linear-gradient(120deg,#b100ff 20%,#ff0080 40%,#b100ff 60%,#ff0080 80%);background:-moz-linear-gradient(120deg,#b100ff 20%,#ff0080 40%,#b100ff 60%,#ff0080 80%);background:-o-linear-gradient(120deg,#b100ff 20%,#ff0080 40%,#b100ff 60%,#ff0080 80%);background:linear-gradient(330deg,#b100ff 20%,#ff0080 40%,#b100ff 60%,#ff0080 80%);-webkit-background-size:100%auto;-moz-background-size:100%auto;-o-background-size:100%auto;background-size:100%auto;color:#000;background-clip:text;text-fill-color:transparent;-webkit-background-clip:text;-webkit-text-fill-color:transparent;text-shadow:0px 0px 20px#ff008040;-webkit-animation:shine 15s infinite;-moz-animation:shine 15s infinite;-o-animation:shine 15s infinite;animation:shine 15s infinite}</style></head><body><div id="__next"><div class="relative __className_f1fba7"><header class="jsx-306e8cfe68c568dc 
         relative px-4 xl:px-32 mx-auto
         max-w-container
       "><div class="jsx-306e8cfe68c568dc 
@@ -20,33 +20,34 @@ Protein Localization Prediction</h2></div><div class="jsx-306e8cfe68c568dc
           "><div style="position:relative;width:100%;height:100%;overflow:hidden;pointer-events:auto;background:#18181b"><div style="width:100%;height:100%"><canvas style="display:block"></canvas></div></div></div><svg xmlns="http://www.w3.org/2000/svg" class="jsx-306e8cfe68c568dc 
             absolute inset-0 h-full w-full text-zinc-800 hover:text-zinc-800/75 -z-10 transition
           "><defs class="jsx-306e8cfe68c568dc"><pattern id="pricing-pattern" width="32" height="64" patternUnits="userSpaceOnUse" x="50%" y="100%" patternTransform="translate(0 -1)" class="jsx-306e8cfe68c568dc"><path d="M0 64V.5H32" fill="none" stroke="currentColor" class="jsx-306e8cfe68c568dc"></path></pattern></defs><rect width="100%" height="100%" fill="url(#pricing-pattern)" class="jsx-306e8cfe68c568dc"></rect></svg></div></header><nav class="absolute top-10 min-w-[100%] z-20 hidden md:block"><ul class="
-        py-[4px] px-1 xl:px-2 mx-auto 
-        flex justify-center 
-        max-w-[30rem] 
-        text-xs xl:text-sm text-zinc-300 font-semibold tracking-normal 
-        rounded-lg shadow-lg shadow-zinc-800 backdrop-blur bg-black/40 
-        ring-1 ring-zinc-600
+          py-[4px] px-1 xl:px-2 mx-auto
+          flex justify-center
+          max-w-[30rem] rounded-lg
+          text-zinc-300 text-xs xl:text-sm font-semibold tracking-normal 
+          bg-black/30 backdrop-blur
+          ring-1 ring-zinc-600
+          shadow-lg shadow-zinc-800
         "><li><a href="#model" class="
-              relative block px-5 py-2 
-              hover:text-zinc-50 
-              transition
+                relative block px-5 py-2 
+                hover:text-zinc-50
+                transition
               ">Model</a></li><li><a href="#demo1" class="
-              relative block px-5 py-2 
-              hover:text-zinc-50 
-              transition
+                relative block px-5 py-2 
+                hover:text-zinc-50
+                transition
               ">Demo 1</a></li><li><a href="#demo2" class="
-              relative block px-5 py-2 
-              hover:text-zinc-50 
-              transition
-              ">Demo 2</a></li><li><a href="#authors" class="
-              relative block px-5 py-2 
-              hover:text-zinc-50 
-              transition
-              ">Authors</a></li><li><a href="#top" class="
-              relative block px-5 py-2 
-              hover:text-zinc-50 
-              transition
-              ">↑ Top</a></li></ul></nav><div class="mt-[-1px] border-t-[1px] border-solid border-zinc-800 bg-zinc-100"></div><div id="authors" class="
+                relative block px-5 py-2 
+                hover:text-zinc-50
+                transition
+              ">Demo 2</a></li><li><a href="#design" class="
+                relative block px-5 py-2 
+                hover:text-zinc-50
+                transition
+              ">Design</a></li><li><a href="#authors" class="
+                relative block px-5 py-2 
+                hover:text-zinc-50
+                transition
+              ">Authors</a></li></ul></nav><div class="mt-[-1px] border-t-[1px] border-solid border-zinc-800 bg-zinc-100"></div><div id="authors" class="
         mx-auto px-4 lg:px-32 
         max-w-container min-h-32 h-64 lg:min-h-24 lg:h-32
         bg-black
@@ -103,7 +104,9 @@ Protein Localization Prediction</h2></div><div class="jsx-306e8cfe68c568dc
             max-w-[100rem] 
             border-l-[1px] border-r-[1px] border-dotted border-zinc-300
           "><p class="
-              px-4 max-w-[50rem] text-[#0a2540] text-2xl text-center leading-9 font-semibold
+              px-6 md:px-4 max-w-[50rem] text-[#0a2540] text-2xl text-center leading-9 font-semibold
+              transition ease-in-out
+              
             ">We present CELL-E 2, a novel bidirectional non-autoregressive transformer that can generate realistic images and sequences of protein localization in the cell<!-- -->.<button class="
                   mx-1 px-1 rounded-lg bg-zinc-200 hover:bg-zinc-100 border-solid border-[1px] border-zinc-300 hover:border-zinc-100 font-bold text-zinc-400
                 " title="Read More">…</button></p><div class="flex flex-wrap justify-center"><a class="
@@ -120,20 +123,20 @@ Protein Localization Prediction</h2></div><div class="jsx-306e8cfe68c568dc
           relative mx-auto pt-24 
           max-w-[100rem] min-h-screen 
           border-l-[1px] border-r-[1px] border-dashed border-zinc-300 
-        "><section class="
+        "><a class="flex justify-center" target="_blank" rel="noopener noreferrer" href="/CELL-E_2/architecture.png"><img alt="Model Overview" fetchpriority="high" width="960" height="600" decoding="async" data-nimg="1" class="xl:-mt-4 mb-4 transition ease-in-out hover:scale-110" style="color:transparent" src="/CELL-E_2/architecture.png"/></a><section class="
             px-4 xl:px-32
             grid grid-cols-5 
             summary
-          " id="model"><header class="text-[#0a2540] col-span-5 xl:col-span-2"><h3 class="text-indigo-500 font-bold">Section 1</h3><h2 class="mt-6 mb-3 text-5xl font-bold tracking-tight">Model Overview</h2><p></p></header><p class="
+          " id="model"><header class="text-[#0a2540] col-span-5 xl:col-span-2"><h3 class="text-indigo-500 font-bold">Section 1</h3><h2 class="mt-6 mb-3 text-5xl font-bold tracking-tight">Model Overview</h2><p></p></header><div class="
               py-14 px-0 xl:px-6 
-              text-[#425466] col-span-5 xl:col-span-3 text-lg
-            "><a target="_blank" rel="noopener noreferrer" href="/CELL-E_2/architecture.png"><img alt="Model Overview" fetchpriority="high" width="1000" height="600" decoding="async" data-nimg="1" class="xl:-mt-4 xl:-ml-4 mb-4" style="color:transparent" src="/CELL-E_2/architecture.png"/></a>CELL-E 2 is the second iteration of the original<!-- --> <a class="text-indigo-500 hover:text-zinc-900 font-bold" target="_blank" rel="noopener noreferrer" href="https://www.biorxiv.org/content/10.1101/2022.05.27.493774v1">CELL-E</a> <!-- -->model which utilizes an amino acid sequence and nucleus image to make predictions of subcellular protein localization with respect to the nucleus. we use novel bidirectional transformer that can generate images depicting protein subcellular localization from the amino acid sequences (and vice versa). CELL-E 2 not only captures the spatial complexity of protein localization and produce probability estimates of localization atop a nucleus image, but also being able to generate sequences from images, enabling de novo protein design. We trained on the<!-- --> <a class="text-indigo-500 hover:text-zinc-900 font-bold" target="_blank" rel="noopener noreferrer" href="https://www.proteinatlas.org/">Human Protein Atlas</a> <!-- -->(HPA) and the<!-- --> <a class="text-indigo-500 hover:text-zinc-900 font-bold" target="_blank" rel="noopener noreferrer" href="https://opencell.czbiohub.org/">OpenCell</a> <!-- -->datasets. CELL-E 2 utilizes pretrained amino acid embeddings from<!-- --> <a class="text-indigo-500 hover:text-zinc-900 font-bold" target="_blank" rel="noopener noreferrer" href="https://github.com/facebookresearch/esm">ESM-2</a>. Localization is predicted as a binary image atop the provided nucleus. The logit values are weighted against these binary images to produce a heatmap of expected localization.</p></section><section class="
+              text-[#425466] col-span-5 2xl:col-span-3 text-lg
+            "><p class="mb-2">CELL-E 2 is the second iteration of the original<!-- --> <a class="text-indigo-500 hover:text-zinc-900 decoration-2 hover:underline font-bold" target="_blank" rel="noopener noreferrer" href="https://www.biorxiv.org/content/10.1101/2022.05.27.493774v1">CELL-E</a> <!-- -->model which utilizes an amino acid sequence and nucleus image to make predictions of subcellular protein localization with respect to the nucleus.<!-- --> </p><p class="mb-2">We use a novel bidirectional transformer that can generate images depicting protein subcellular localization from the amino acid sequences (and vice versa).<!-- --> </p><p class="mb-2">CELL-E 2 can not only capture the spatial complexity of protein localization and produce probability estimates of localization atop a nucleus image, but it is also able to generate sequences from images, enabling de novo protein design.</p><p class="mb-2">We trained on the<!-- --> <a class="text-indigo-500 hover:text-zinc-900 decoration-2 hover:underline font-bold" target="_blank" rel="noopener noreferrer" href="https://www.proteinatlas.org/">Human Protein Atlas</a> <!-- -->(HPA) and the<!-- --> <a class="text-indigo-500 hover:text-zinc-900 decoration-2 hover:underline font-bold" target="_blank" rel="noopener noreferrer" href="https://opencell.czbiohub.org/">OpenCell</a> <!-- -->datasets. CELL-E 2 utilizes pretrained amino acid embeddings from<!-- --> <a class="text-indigo-500 hover:text-zinc-900 decoration-2 hover:underline font-bold" target="_blank" rel="noopener noreferrer" href="https://github.com/facebookresearch/esm">ESM-2</a>. Localization is predicted as a binary image atop the provided nucleus. The logit values are weighted against these binary images to produce a <em>heatmap of expected localization.</em></p></div></section><section class="
             px-4 xl:px-32
             grid grid-cols-5
-          "><header class="text-[#0a2540] col-span-2"><h3 class="text-indigo-500 font-bold">Section 2</h3><h2 class="mt-6 mb-3 text-5xl font-bold tracking-tight">Localization Prediction</h2><p>Text-to-Image</p></header><p class="
+          "><header class="text-[#0a2540] col-span-5 xl:col-span-2"><h3 class="text-indigo-500 font-bold">Section 2</h3><h2 class="mt-6 mb-3 text-5xl font-bold tracking-tight">Localization Prediction</h2><p>Text-to-Image</p></header><p class="
               py-14 px-0 xl:px-6 
               text-[#425466] col-span-5 xl:col-span-3 text-lg
-            ">CELL-E 2 can generate localization images by masking the image input section.</p></section><div class="flex justify-center mt-12 mb-16 px-2 xl:px-8 2xl:px-32"><button style="height:400px" class="
+            ">CELL-E 2 can generate localization images by masking the image input section.</p></section><div id="demo1" class="relative flex flex-col items-center mt-12 mb-16 px-2 xl:px-8 2xl:px-32"><span class="mb-[-24px] mr-4 w-full xl:w-4/5 text-sm text-right opacity-80">example images:<!-- --> <a class="text-indigo-500 hover:text-zinc-900 decoration-2 hover:underline font-bold" target="_blank" rel="noopener noreferrer" href="https://huggingface.co/spaces/HuangLab/CELL-E_2-Image_Prediction/resolve/main/images/Armadillo%20repeat-containing%20X-linked%20protein%205%20nucleus.jpg">nucleus</a>,<!-- --> <a class="text-indigo-500 hover:text-zinc-900 decoration-2 hover:underline font-bold" target="_blank" rel="noopener noreferrer" href="https://huggingface.co/spaces/HuangLab/CELL-E_2-Image_Prediction/resolve/main/images/Armadillo%20repeat-containing%20X-linked%20protein%205%20protein.jpg">protein</a></span><button style="height:400px" class="
             flex justify-center items-center
             w-full xl:w-4/5
             bg-gray-100 text-indigo-500 hover:bg-gray-200
@@ -145,10 +148,10 @@ Protein Localization Prediction</h2></div><div class="jsx-306e8cfe68c568dc
           ">Click to load demo</button></div><section class="
             px-4 xl:px-32
             grid grid-cols-5
-          "><header class="text-[#0a2540] col-span-2"><h3 class="text-indigo-500 font-bold">Section 3</h3><h2 class="mt-6 mb-3 text-5xl font-bold tracking-tight">Sequence Prediction</h2><p>Image-to-Text</p></header><p class="
+          "><header class="text-[#0a2540] col-span-5 xl:col-span-2"><h3 class="text-indigo-500 font-bold">Section 3</h3><h2 class="mt-6 mb-3 text-5xl font-bold tracking-tight">Sequence Prediction</h2><p>Image-to-Text</p></header><p class="
               py-14 px-0 xl:px-6 
               text-[#425466] col-span-5 xl:col-span-3 text-lg
-            ">Similarly, amino acids positions can be masked (replaced or inserted) to make predictions based on the localization pattern.</p></section><div class="flex justify-center mt-12 mb-16 px-2 xl:px-8 2xl:px-32"><button style="height:400px" class="
+            ">Similarly, amino acids positions can be masked (replaced or inserted) to make predictions based on the localization pattern.</p></section><div id="demo2" class="relative flex flex-col items-center mt-12 mb-16 px-2 xl:px-8 2xl:px-32"><span class="mb-[-24px] mr-4 w-full xl:w-4/5 text-sm text-right opacity-80">example images:<!-- --> <a class="text-indigo-500 hover:text-zinc-900 decoration-2 hover:underline font-bold" target="_blank" rel="noopener noreferrer" href="https://huggingface.co/spaces/HuangLab/CELL-E_2-Image_Prediction/resolve/main/images/Armadillo%20repeat-containing%20X-linked%20protein%205%20nucleus.jpg">nucleus</a>,<!-- --> <a class="text-indigo-500 hover:text-zinc-900 decoration-2 hover:underline font-bold" target="_blank" rel="noopener noreferrer" href="https://huggingface.co/spaces/HuangLab/CELL-E_2-Image_Prediction/resolve/main/images/Armadillo%20repeat-containing%20X-linked%20protein%205%20protein.jpg">protein</a></span><button style="height:400px" class="
             flex justify-center items-center
             w-full xl:w-4/5
             bg-gray-100 text-indigo-500 hover:bg-gray-200
@@ -157,14 +160,14 @@ Protein Localization Prediction</h2></div><div class="jsx-306e8cfe68c568dc
             cursor-pointer
             transition
             border-[1px] border-dashed border-zinc-300 hover:border-gray-200
-          ">Click to load demo</button></div><section class="
+          ">Click to load demo</button></div><section id="design" class="
             px-4 xl:px-32
             grid grid-cols-5
-          "><header class="text-[#0a2540] col-span-2"><h3 class="text-indigo-500 font-bold">Section 4</h3><h2 class="mt-6 mb-3 text-5xl font-bold tracking-tight"><em>De novo</em> Protein Design</h2><p></p></header><p class="
-                py-14 px-0 xl:px-6 
-                text-[#425466] col-span-5 xl:col-span-3 text-lg
-              ">We created an entirely new approach to protein design which leverages spatial information from images. Using CELL-E 2, we predicted 255 likely novel nuclear localizing signals with distinct sequence homology from documented sequences.</p></section></div></main><footer class="
-        mx-auto pt-32 px-4 xl:px-8 
+          "><header class="text-[#0a2540] col-span-5 xl:col-span-2"><h3 class="text-indigo-500 font-bold">Section 4</h3><h2 class="mt-6 mb-3 text-5xl font-bold tracking-tight"><em>De novo</em> Protein Design</h2><p></p></header><div class="
+              py-14 px-0 xl:px-6 
+              text-[#425466] col-span-5 xl:col-span-3 text-lg
+            "><p class="mb-2">We created an entirely new approach to protein design which leverages spatial information from images.</p><p class="mb-2">Using CELL-E 2, we predicted 255 likely novel nuclear localizing signals with distinct sequence homology from documented sequences.</p></div></section></div></main><footer class="
+        mx-auto pt-32 pb-4 px-4 xl:px-8 
         w-full max-w-container 
         bg-[#f6f9fc]
-      "><div class="py-10 border-t border-slate-900/5"><p class="mt-5 text-center text-sm leading-6 text-slate-500">All rights reserved.</p></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"Hub8ULo92les8YjFuCXK5","assetPrefix":"/CELL-E_2","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
+      "><div class="py-10 border-t border-slate-900/5"><p class="mt-5 text-center text-sm leading-6 text-slate-500">All rights reserved.</p></div></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{}},"page":"/","query":{},"buildId":"iQd5ZjY8RwTea-tNlNief","assetPrefix":"/CELL-E_2","nextExport":true,"autoExport":true,"isFallback":false,"scriptLoader":[]}</script></body></html>
