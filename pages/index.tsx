@@ -8,6 +8,7 @@ import Abstract from '../components/Abstract';
 import Authors from '../components/Authors';
 import Demo from '../components/Demo';
 import Footer from '../components/Footer';
+import Video from '../components/Video';
 import ExternalLink from '../components/ExternalLink';
 import React from 'react';
 
@@ -182,6 +183,31 @@ function Main() {
           >
             <p className="mb-2">{`We created an entirely new approach to protein design which leverages spatial information from images.`}</p>
             <p className="mb-2">{`Using CELL-E 2, we predicted 255 likely novel nuclear localizing signals with distinct sequence homology from documented sequences.`}</p>
+          </div>
+        </section>
+
+        <section
+          id="comparison"
+          className={`
+            px-4 xl:px-32
+            grid grid-cols-5
+          `}
+        >
+          <header className="text-[#0a2540] col-span-5 xl:col-span-2">
+            <h3 className="text-indigo-500 font-bold">Section 5</h3>
+            <h2 className="mt-6 mb-3 text-5xl font-bold tracking-tight">
+              Comparison
+            </h2>
+            <p>{''}</p>
+          </header>
+          <div
+            className={`
+              py-14 px-0 xl:px-6 
+              text-[#425466] col-span-5 xl:col-span-3 text-lg
+            `}
+          >
+            <Video />
+            <p className="mb-2">{`In comparison to CELL-E, CELL-E 2 makes image predictions 65x faster with higher accuracy.`}</p>
           </div>
         </section>
       </div>

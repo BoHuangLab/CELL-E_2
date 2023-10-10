@@ -12,6 +12,7 @@
     "deploy": "rm -rf docs && next build && touch out/.nojekyll && mv out docs && git add docs/ && git commit -m \"Deploy\" && git checkout gh-pages && git push"
   },
   "dependencies": {
+    "@react-hook/intersection-observer": "^3.1.1",
     "@react-three/drei": "^9.68.2",
     "@react-three/fiber": "^8.13.0",
     "@react-three/postprocessing": "^2.11.0",
