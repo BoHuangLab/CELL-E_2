@@ -9,7 +9,16 @@ function Footer() {
     >
       <div className={`py-10 border-t border-slate-900/5`}>
         <p className={`mt-5 text-center text-sm leading-6 text-slate-500`}>
-          All rights reserved.
+          All rights reserved.{' '}
+          <a
+            className="text-slate-700"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/BoHuangLab/CELL-E_2/tree/gh-pages"
+          >
+            Site code
+          </a>
+          .
         </p>
       </div>
     </footer>

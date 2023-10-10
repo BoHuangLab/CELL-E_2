@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "components/Canvas.jsx"
+    "components/Canvas.jsx",
+    "components/Video.jsx"
   ],
   "exclude": ["node_modules"]
 }
