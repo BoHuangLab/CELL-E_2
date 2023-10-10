@@ -229,11 +229,8 @@ function MetaTag() {
         property="og:description"
         content="CELL-E 2 is a bidirectional transformer that generates realistic images and sequences of protein localization in the cell."
       />
-      <meta
-        property="og:image"
-        content="https://bohuanglab.github.io/CELL-E_2/architecture.png"
-      />
-      <meta property="og:image:alt" content="architecture figure" />
+      <meta property="og:image" content="https://i.imgur.com/rUq86ih.png" />
+      <meta property="og:image:alt" content="CELL-E 2 preview" />
       <meta name="twitter:card" content="summary_large_image" />
     </Head>
   );
