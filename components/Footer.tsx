@@ -2,7 +2,7 @@ function Footer() {
   return (
     <footer
       className={`
-        mx-auto pt-32 px-4 xl:px-8 
+        mx-auto pt-32 pb-4 px-4 xl:px-8 
         w-full max-w-container 
         bg-[#f6f9fc]
       `}

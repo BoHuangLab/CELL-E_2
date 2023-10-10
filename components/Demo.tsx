@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import IframeResizer from 'iframe-resizer-react';
+import ExternalLink from '../components/ExternalLink';
 
 type DemoProps = {
   id: string;
@@ -8,14 +9,32 @@ type DemoProps = {
   className?: string;
 };
 
+export function ExampleImages() {
+  return (
+    <span className="mb-[-24px] mr-4 w-full xl:w-4/5 text-sm text-right	opacity-80">
+      example images:{' '}
+      <ExternalLink href="https://huggingface.co/spaces/HuangLab/CELL-E_2-Image_Prediction/resolve/main/images/Armadillo%20repeat-containing%20X-linked%20protein%205%20nucleus.jpg">
+        nucleus
+      </ExternalLink>
+      ,{' '}
+      <ExternalLink href="https://huggingface.co/spaces/HuangLab/CELL-E_2-Image_Prediction/resolve/main/images/Armadillo%20repeat-containing%20X-linked%20protein%205%20protein.jpg">
+        protein
+      </ExternalLink>
+    </span>
+  );
+}
+
 function Demo({ id, src, height, className = '' }: DemoProps) {
   const [showDemo, setShowDemo] = useState(false);
 
   return (
-    <div className="flex justify-center mt-12 mb-16 px-2 xl:px-8 2xl:px-32">
+    <div
+      id={id}
+      className="relative flex flex-col items-center mt-12 mb-16 px-2 xl:px-8 2xl:px-32"
+    >
+      <ExampleImages />
       {showDemo ? (
         <IframeResizer
-          id={id}
           className={`rounded-lg w-full xl:w-4/5 ${className}`}
           src={src}
           frameBorder="0"

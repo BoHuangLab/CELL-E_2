@@ -30,7 +30,9 @@ function Abstract() {
         >
           <p
             className={`
-              px-4 max-w-[50rem] text-[#0a2540] text-2xl text-center leading-9 font-semibold
+              px-6 md:px-4 max-w-[50rem] text-[#0a2540] text-2xl text-center leading-9 font-semibold
+              transition ease-in-out
+              ${showFullText ? `px-2 md:px-14` : ''}
             `}
           >
             {abstract[0]}.

@@ -8,6 +8,8 @@ import Abstract from '../components/Abstract';
 import Authors from '../components/Authors';
 import Demo from '../components/Demo';
 import Footer from '../components/Footer';
+import ExternalLink from '../components/ExternalLink';
+import React from 'react';
 
 function Main() {
   return (
@@ -26,6 +28,21 @@ function Main() {
           border-l-[1px] border-r-[1px] border-dashed border-zinc-300 
         `}
       >
+        <a
+          className="flex justify-center"
+          target="_blank"
+          rel="noopener noreferrer"
+          href="/CELL-E_2/architecture.png"
+        >
+          <Image
+            className="xl:-mt-4 mb-4 transition ease-in-out hover:scale-110"
+            src="/CELL-E_2/architecture.png"
+            alt="Model Overview"
+            width="960"
+            height="600"
+            priority
+          />
+        </a>
         <section
           className={`
             px-4 xl:px-32
@@ -41,74 +58,50 @@ function Main() {
             </h2>
             <p>{''}</p>
           </header>
-          <p
+          <div
             className={`
               py-14 px-0 xl:px-6 
-              text-[#425466] col-span-5 xl:col-span-3 text-lg
+              text-[#425466] col-span-5 2xl:col-span-3 text-lg
             `}
           >
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="/CELL-E_2/architecture.png"
-            >
-              <Image
-                className="xl:-mt-4 xl:-ml-4 mb-4"
-                src="/CELL-E_2/architecture.png"
-                alt="Model Overview"
-                width="1000"
-                height="600"
-                priority
-              />
-            </a>
-            CELL-E 2 is the second iteration of the original{' '}
-            <a
-              className="text-indigo-500 hover:text-zinc-900 font-bold"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.biorxiv.org/content/10.1101/2022.05.27.493774v1"
-            >
-              CELL-E
-            </a>{' '}
-            model which utilizes an amino acid sequence and nucleus image to
-            make predictions of subcellular protein localization with respect to
-            the nucleus. we use novel bidirectional transformer that can
-            generate images depicting protein subcellular localization from the
-            amino acid sequences (and vice versa). CELL-E 2 not only captures
-            the spatial complexity of protein localization and produce
-            probability estimates of localization atop a nucleus image, but also
-            being able to generate sequences from images, enabling de novo
-            protein design. We trained on the{' '}
-            <a
-              className="text-indigo-500 hover:text-zinc-900 font-bold"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://www.proteinatlas.org/"
-            >
-              Human Protein Atlas
-            </a>{' '}
-            (HPA) and the{' '}
-            <a
-              className="text-indigo-500 hover:text-zinc-900 font-bold"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://opencell.czbiohub.org/"
-            >
-              OpenCell
-            </a>{' '}
-            datasets. CELL-E 2 utilizes pretrained amino acid embeddings from{' '}
-            <a
-              className="text-indigo-500 hover:text-zinc-900 font-bold"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://github.com/facebookresearch/esm"
-            >
-              ESM-2
-            </a>
-            . Localization is predicted as a binary image atop the provided
-            nucleus. The logit values are weighted against these binary images
-            to produce a heatmap of expected localization.
-          </p>
+            <p className="mb-2">
+              CELL-E 2 is the second iteration of the original{' '}
+              <ExternalLink href="https://www.biorxiv.org/content/10.1101/2022.05.27.493774v1">
+                CELL-E
+              </ExternalLink>{' '}
+              model which utilizes an amino acid sequence and nucleus image to
+              make predictions of subcellular protein localization with respect
+              to the nucleus.{' '}
+            </p>
+            <p className="mb-2">
+              We use a novel bidirectional transformer that can generate images
+              depicting protein subcellular localization from the amino acid
+              sequences (and vice versa).{' '}
+            </p>
+            <p className="mb-2">
+              CELL-E 2 can not only capture the spatial complexity of protein
+              localization and produce probability estimates of localization
+              atop a nucleus image, but it is also able to generate sequences
+              from images, enabling de novo protein design.
+            </p>
+            <p className="mb-2">
+              We trained on the{' '}
+              <ExternalLink href="https://www.proteinatlas.org/">
+                Human Protein Atlas
+              </ExternalLink>{' '}
+              (HPA) and the{' '}
+              <ExternalLink href="https://opencell.czbiohub.org/">
+                OpenCell
+              </ExternalLink>{' '}
+              datasets. CELL-E 2 utilizes pretrained amino acid embeddings from{' '}
+              <ExternalLink href="https://github.com/facebookresearch/esm">
+                ESM-2
+              </ExternalLink>
+              . Localization is predicted as a binary image atop the provided
+              nucleus. The logit values are weighted against these binary images
+              to produce a <em>heatmap of expected localization.</em>
+            </p>
+          </div>
         </section>
 
         <section
@@ -117,7 +110,7 @@ function Main() {
             grid grid-cols-5
           `}
         >
-          <header className="text-[#0a2540] col-span-2">
+          <header className="text-[#0a2540] col-span-5 xl:col-span-2">
             <h3 className="text-indigo-500 font-bold">Section 2</h3>
             <h2 className="mt-6 mb-3 text-5xl font-bold tracking-tight">
               Localization Prediction
@@ -145,7 +138,7 @@ function Main() {
             grid grid-cols-5
           `}
         >
-          <header className="text-[#0a2540] col-span-2">
+          <header className="text-[#0a2540] col-span-5 xl:col-span-2">
             <h3 className="text-indigo-500 font-bold">Section 3</h3>
             <h2 className="mt-6 mb-3 text-5xl font-bold tracking-tight">
               Sequence Prediction
@@ -168,26 +161,28 @@ function Main() {
         />
 
         <section
+          id="design"
           className={`
             px-4 xl:px-32
             grid grid-cols-5
           `}
         >
-          <header className="text-[#0a2540] col-span-2">
+          <header className="text-[#0a2540] col-span-5 xl:col-span-2">
             <h3 className="text-indigo-500 font-bold">Section 4</h3>
             <h2 className="mt-6 mb-3 text-5xl font-bold tracking-tight">
               <em>De novo</em> Protein Design
             </h2>
             <p>{''}</p>
           </header>
-          <p
+          <div
             className={`
-                py-14 px-0 xl:px-6 
-                text-[#425466] col-span-5 xl:col-span-3 text-lg
-              `}
+              py-14 px-0 xl:px-6 
+              text-[#425466] col-span-5 xl:col-span-3 text-lg
+            `}
           >
-            {`We created an entirely new approach to protein design which leverages spatial information from images. Using CELL-E 2, we predicted 255 likely novel nuclear localizing signals with distinct sequence homology from documented sequences.`}
-          </p>
+            <p className="mb-2">{`We created an entirely new approach to protein design which leverages spatial information from images.`}</p>
+            <p className="mb-2">{`Using CELL-E 2, we predicted 255 likely novel nuclear localizing signals with distinct sequence homology from documented sequences.`}</p>
+          </div>
         </section>
       </div>
     </main>
