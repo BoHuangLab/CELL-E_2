@@ -57,7 +57,7 @@ function Abstract() {
               className={`
                 m-3 mb-0 flex content-center items-center rounded-lg mt-6 py-5 px-4 h-11 bg-indigo-600 text-white  ring-indigo-800 hover:bg-[#f6f9fc] hover:text-black hover:border-zinc-300 border-[1px] transition
               `}
-              href="https://www.biorxiv.org/content/10.1101/2023.10.05.561066v1"
+              href="https://openreview.net/forum?id=YSMLVffl5u"
               target="_blank"
               rel="noopener noreferrer"
             >
